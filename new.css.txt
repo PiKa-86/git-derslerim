@@ -1,0 +1,5 @@
+body{
+	background-color:#a5b1fa;
+	margin:0px;
+	padding:0px;
+}

@@ -1,0 +1,48 @@
+- 1) 
+
+pwd [Enter] 
+/c/Users/G
+
+
+- 2) 
+
+G@G-2 MINGW64 ~/desktop
+$ cd Programming
+
+G@G-2 MINGW64 ~/desktop/Programming
+$ cd GIT
+
+G@G-2 MINGW64 ~/desktop/Programming/GIT (master)
+$
+
+- 3)
+
+ G@G-2 MINGW64 ~/Desktop/Programming
+$ ls
+'~$b development tools.docx'  'Editor programs'/   More/
+'~$ther learning.docx'         ex-s/              'motivation letter.docx'
+ Assignments/                  GIT/                photos/
+ earthquake/                   lesson.html.txt     Programs/
+
+- 4) 
+
+G@G-2 MINGW64 ~/Desktop/Programming
+$ cd ..
+
+G@G-2 MINGW64 ~/Desktop
+
+- 5) Clear or Ctrl+L [Enter]
+
+G@G-2 MINGW64 ~/Desktop
+$
+
+- 6) git init
+
+
+G@G-2 MINGW64 ~/Desktop/islamqa
+$ git init
+Initialized empty Git repository in C:/Users/G/Desktop/programming/GIT/.git/
+
+G@G-2 MINGW64 ~/Desktop/Programming/GIT (master)
+$
+

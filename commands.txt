@@ -46,3 +46,53 @@ Initialized empty Git repository in C:/Users/G/Desktop/programming/GIT/.git/
 G@G-2 MINGW64 ~/Desktop/Programming/GIT (master)
 $
 
+
+- 7) 
+
+$ git add  commands.txt [Enter]
+
+G@G-2 MINGW64 ~/Desktop/Programming/GIT (master)
+
+
+- 8)
+
+$ git commit -m "3-cu file" [Enter]
+
+[master 5be81e9] 3-cu file
+ 1 file changed, 48 insertions(+)
+ create mode 100644 commands.txt
+
+
+- 10) 
+
+$ git status   [Enter]
+
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   commands.txt
+
+- 11)
+ 
+$ git log [Enter]
+
+commit 5be81e98c9e9fdf3d44520db18cb14054d3b5743 (HEAD -> master)
+Author: PiKa-86 <parvizkazimov1986@gmail.com>
+Date:   Mon May 11 01:53:08 2020 +0400
+
+    3-cu file
+
+commit 11f0104a545327096ab087af5a0abbefd6ba8cef
+Author: PiKa-86 <parvizkazimov1986@gmail.com>
+Date:   Sun May 10 01:59:54 2020 +0400
+
+    ikinci projedir
+
+commit 14a7a3ff3c1c4918079176aea4ee19a4fcc8fe2f
+Author: PiKa-86 <parvizkazimov1986@gmail.com>
+Date:   Sun May 10 01:53:50 2020 +0400
+
+    ilk proje
+
+
+- 12) (git diff) [Enter]

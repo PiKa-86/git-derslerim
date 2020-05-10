@@ -97,8 +97,6 @@ Date:   Sun May 10 01:53:50 2020 +0400
 
 - 12) 
 
-(git diff) 
-
 
 $ git diff [Enter]
 diff --git a/commands.txt b/commands.txt
@@ -119,3 +117,4 @@ G@G-2 MINGW64 ~/Desktop/Programming/GIT (master)
 $ git commit -m "deyishiklikler"
 [master a458a2a] deyishiklikler
  1 file changed, 50 insertions(+)
+_____________________________________________

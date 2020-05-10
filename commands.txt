@@ -95,4 +95,27 @@ Date:   Sun May 10 01:53:50 2020 +0400
     ilk proje
 
 
-- 12) (git diff) [Enter]
+- 12) 
+
+(git diff) 
+
+
+$ git diff [Enter]
+diff --git a/commands.txt b/commands.txt
+index d35e464..3693abd 100644
+--- a/commands.txt
++++ b/commands.txt
+@@ -95,4 +95,4 @@ Date:   Sun May 10 01:53:50 2020 +0400
+     ilk proje
+
+
+-- 12) (git diff)
++- 12) (git diff) [Enter]
+
+G@G-2 MINGW64 ~/Desktop/Programming/GIT (master)
+$ git add .
+
+G@G-2 MINGW64 ~/Desktop/Programming/GIT (master)
+$ git commit -m "deyishiklikler"
+[master a458a2a] deyishiklikler
+ 1 file changed, 50 insertions(+)

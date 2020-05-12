@@ -193,3 +193,46 @@ Changes to be committed:
 
 G@G-2 MINGW64 ~/desktop/programming/git (master)
 $
+ 
+- 14) 
+
+(git mv)
+
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git mv sinaq.txt dosya1.txt
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    sinaq.txt -> dosya1.txt
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git commit -m "dosya adi deyisdirildi"
+[master 1c5807e] dosya adi deyisdirildi
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename sinaq.txt => dosya1.txt (100%)
+
+
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git mv dosya1.txt dosyalar/
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        renamed:    dosya1.txt -> dosyalar/dosya1.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git commit -m "dosya1 moved to dosyalar file"
+[master 7a87596] dosya1 moved to dosyalar file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename dosya1.txt => dosyalar/dosya1.txt (100%)

@@ -118,3 +118,78 @@ $ git commit -m "deyishiklikler"
 [master a458a2a] deyishiklikler
  1 file changed, 50 insertions(+)
 _____________________________________________
+
+
+git diff --staged
+
+
+
+- 13) 
+
+$ git commit -m "silinen papka"
+[master 9b83f2e] silinen papka
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 silinen papka/1.txt
+ create mode 100644 silinen papka/2.txt
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git rm -r silinen papka/
+fatal: pathspec 'silinen' did not match any files
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git rm -r silinen papka
+fatal: pathspec 'silinen' did not match any files
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    silinen papka/1.txt
+        deleted:    silinen papka/2.txt
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    silinen/1.txt
+        deleted:    silinen/2.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sil/
+
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git add .
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git commit -m "sil"
+[master ea9ae72] sil
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ rename {silinen => sil}/1.txt (100%)
+ rename {silinen => sil}/2.txt (100%)
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git rm -r sil
+rm 'sil/1.txt'
+rm 'sil/2.txt'
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        deleted:    sil/1.txt
+        deleted:    sil/2.txt
+
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$

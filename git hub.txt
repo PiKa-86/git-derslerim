@@ -1,0 +1,45 @@
+- 1) [github-a dosya eklemek]
+
+G@G-2 MINGW64 ~
+$ cd desktop/programming/git/
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git hub.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git remote add githubRepo https://github.com/PiKa-86/git-derslerim.git
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git remote
+githubRepo
+
+G@G-2 MINGW64 ~/desktop/programming/git (master)
+$ git push -u githubRepo master
+
+(Username:
+Password:
+(github-daki profile ve shifreyi ister)
+
+Enumerating objects: 46, done.
+Counting objects: 100% (46/46), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (40/40), done.
+Writing objects: 100% (46/46), 5.99 KiB | 360.00 KiB/s, done.
+Total 46 (delta 7), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (7/7), done.
+To https://github.com/PiKa-86/git-derslerim.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'githubRepo'.

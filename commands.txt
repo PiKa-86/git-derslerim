@@ -236,3 +236,131 @@ $ git commit -m "dosya1 moved to dosyalar file"
 [master 7a87596] dosya1 moved to dosyalar file
  1 file changed, 0 insertions(+), 0 deletions(-)
  rename dosya1.txt => dosyalar/dosya1.txt (100%)
+
+
+- 15) 
+
+[git restore -  Degisikligi Geri Alma (Gecis Bolgesi)-  working directory ]
+
+G@G-2 MINGW64 ~/desktop/proje
+$ git init
+Initialized empty Git repository in C:/Users/G/Desktop/proje/.git/
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git add .
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git commit -m "dosya deyishikliyi geri alma"
+[master (root-commit) dbe0cb3] dosya deyishikliyi geri alma
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git restore 1.txt
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+_______________________________________________
+
+(silien dosyani file-i geri getirmek -- ayni ishlem)
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git restore 1.txt
+
+G@G-2 MINGW64 ~/desktop/proje (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+
+- 16)
+
+
+[Degisikligi Geri Alma (Gecis Bolgesi) - staged-unstaged]
+
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git add .
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   1.txt
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   1.txt
+
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git restore --staged 1
+error: pathspec '1' did not match any file(s) known to git
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git restore --staged 1.txt
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git restore 1.txt
+
+G@G-2 MINGW64 ~/desktop/deneme (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
